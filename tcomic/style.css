@@ -12,9 +12,11 @@ body {
 h1 {
 	font-family: Monaco, Trebuchet MS;
 	font-size: 4em;
-	/*border-bottom: 2px solid pink;
-	border-right: 2px solid pink;*/
-	border-radius: 4px;
+	margin-top: 8px;
+	margin-left: 38px;
+	margin-bottom: 2px;
+	text-align: left;
+	/*border-radius: 4px;
 	border: 1px solid #8E8E93;
 	width: 400px;
 	text-align: center;
@@ -23,8 +25,7 @@ h1 {
 	-webkit-box-shadow: 4px 4px 5px #888888;
 	-o-box-shadow: 4px 4px 5px #888888;
 	box-shadow: 1px 1px 2px #888888;
-	margin-top: 10px;
-	margin-left: 10px;
+	*/
 }
 
 h4 {
@@ -64,3 +65,40 @@ img {
 img:hover {
 	transform: scale(1.02);
 }
+
+.blue-line {
+	display: inline-block;
+	margin-left: 10px;
+    width: 90px;
+    height: 4px;
+    background-color: #176BEF;
+    border-radius: 4px;
+}
+
+.red-line {
+	display: inline-block;
+	margin-left: 10px;
+    width: 90px;
+    height: 4px;
+    background-color: #FF3E30;
+    border-radius: 4px;
+}
+
+.yellow-line {
+	display: inline-block;
+	margin-left: 10px;
+    width: 90px;
+    height: 4px;
+    background-color: #F7B529;
+    border-radius: 4px;
+}
+
+.green-line {
+	display: inline-block;
+	margin-left: 10px;
+    width: 90px;
+    height: 4px;
+    background-color: #179C52;
+    border-radius: 4px;
+}
+
