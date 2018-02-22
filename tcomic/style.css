@@ -68,37 +68,33 @@ img:hover {
 
 .blue-line {
 	display: inline-block;
-	margin-left: 10px;
-    width: 90px;
+    width: 25%;
     height: 4px;
     background-color: #176BEF;
-    border-radius: 4px;
+    white-space: nowrap;
 }
 
 .red-line {
 	display: inline-block;
-	margin-left: 10px;
-    width: 90px;
+    width: 25%;
     height: 4px;
     background-color: #FF3E30;
-    border-radius: 4px;
+    white-space: nowrap;
 }
 
 .yellow-line {
 	display: inline-block;
-	margin-left: 10px;
-    width: 90px;
+    width: 25%;
     height: 4px;
     background-color: #F7B529;
-    border-radius: 4px;
+    white-space: nowrap;
 }
 
 .green-line {
 	display: inline-block;
-	margin-left: 10px;
-    width: 90px;
+    width: 25%;
     height: 4px;
     background-color: #179C52;
-    border-radius: 4px;
+    white-space: nowrap;
 }
 
