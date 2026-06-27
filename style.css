@@ -25,12 +25,13 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: clamp(0.75rem, 4vw, 3.5rem);
-    background-color: var(--desk);
+    background-color: #8a5127;
     background-image:
-        radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.23) 0 1px, transparent 1.5px),
-        radial-gradient(circle at 80% 60%, rgba(66, 52, 30, 0.1) 0 1px, transparent 1.5px),
-        linear-gradient(115deg, rgba(255, 255, 255, 0.18), transparent 42%, rgba(74, 57, 34, 0.08));
-    background-size: 19px 23px, 29px 31px, 100% 100%;
+        linear-gradient(rgba(63, 34, 15, 0.18), rgba(63, 34, 15, 0.28)),
+        url("assets/images/teak-table-texture.jpg");
+    background-position: center, center;
+    background-size: cover, cover;
+    background-repeat: no-repeat;
     color: var(--ink);
     font-family: Georgia, "Times New Roman", serif;
     line-height: 1.55;
@@ -300,13 +301,12 @@ h1::after {
 
 @media (max-width: 680px) {
     body {
-        padding: 0;
+        padding: 0.5rem;
     }
 
     .paper {
-        min-height: 100vh;
-        border-width: 0;
-        box-shadow: none;
+        min-height: calc(100vh - 1rem);
+        box-shadow: 0 8px 24px rgba(44, 24, 10, 0.3);
         background-image:
             repeating-linear-gradient(0deg, transparent 0 31px, var(--rule) 31px 32px),
             radial-gradient(circle at 16% 14%, rgba(98, 77, 43, 0.055) 0 0.7px, transparent 1px);
@@ -372,4 +372,26 @@ img {
     width: 5rem;
     border-radius: 5%;
     box-shadow: 0 2px 2px rgba(64, 48, 27, 0.18), 0 18px 45px rgba(64, 48, 27, 0.2);
+}
+
+/* Fast blur transition for project navigation */
+.paper {
+    transition: filter 160ms ease-out, opacity 160ms ease-out, transform 160ms ease-out;
+}
+
+body.is-leaving {
+    overflow: hidden;
+}
+
+body.is-leaving .paper {
+    pointer-events: none;
+    opacity: 0.45;
+    filter: blur(7px);
+    transform: translate3d(0, 0, 0) scale(0.985);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .paper {
+        transition: none;
+    }
 }
