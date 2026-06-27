@@ -1,40 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>JC</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jagadeesh Shetty's portfolio of JavaScript experiments, software QA notes, artwork, and small web projects.">
+    <meta name="theme-color" content="#ecf0f1">
+    <title>Jagadeesh Shetty — Projects and Experiments</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
-<body onload="startTime()">
-    <div class="window">
-        <div class="titlebar">
-            <div class="buttons">
-                <div class="close"></div>
-                <div class="minimize"></div>
-                <div class="zoom"></div>
-            </div>
-            JC
-            <!-- window title -->
-        </div>
-        <div class="content">
-            <div class="dateTime" id="txt"></div>
-            <ol>
-                <a href="./js/index.html">javascript</a>
-                <a href="./tcomic/">tech commic</a>
-                <a href="./qa/README.pdf">software QA</a>
-                <a href="./test/login/">login form</a>
-                <a href="./time/">date and time</a>
-                <a href="./painting/">painting</a>
-                <a href="./profile/">profile</a>
-            </ol>
-            <!-- window content -->
-        </div>
-    </div>
-</body>
+<body>
+    <main class="window" aria-labelledby="page-title">
+        <header class="titlebar">
+            <span class="buttons" aria-hidden="true">
+                <span class="close"></span>
+                <span class="minimize"></span>
+                <span class="zoom"></span>
+            </span>
+            <span>Jagadeesh Shetty</span>
+        </header>
 
+        <div class="content">
+            <time class="date-time" id="date-time" aria-live="off"></time>
+
+            <section class="intro">
+                <p class="eyebrow">Hello, I’m</p>
+                <h1 id="page-title">Jagadeesh Shetty</h1>
+                <p class="lede">A collection of web experiments, software testing notes, creative work, and things I’ve learned by building.</p>
+                <div class="intro-links" aria-label="Profile links">
+                    <a class="primary-link" href="./profile/">View résumé</a>
+                    <a href="https://github.com/jagadeeshshetty">GitHub profile</a>
+                </div>
+            </section>
+
+            <section aria-labelledby="projects-title">
+                <div class="section-heading">
+                    <h2 id="projects-title">Selected work</h2>
+                    <p>Small projects, notes, and visual experiments.</p>
+                </div>
+
+                <ul class="project-grid">
+                    <li>
+                        <a class="project-card" href="./js/">
+                            <span class="project-number">01</span>
+                            <strong>JavaScript</strong>
+                            <span>Notes and browser experiments</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="project-card" href="./tcomic/">
+                            <span class="project-number">02</span>
+                            <strong>Tech comics</strong>
+                            <span>A visual collection about coding</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="project-card" href="./qa/README.html">
+                            <span class="project-number">03</span>
+                            <strong>Software QA</strong>
+                            <span>Testing resources and references</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="project-card" href="./test/login/">
+                            <span class="project-number">04</span>
+                            <strong>Login UI</strong>
+                            <span>An animated interface study</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="project-card" href="./time/">
+                            <span class="project-number">05</span>
+                            <strong>Date and time</strong>
+                            <span>A compact live-clock experiment</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="project-card" href="./painting/">
+                            <span class="project-number">06</span>
+                            <strong>Paintings</strong>
+                            <span>Personal artwork and studies</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+</body>
 </html>
