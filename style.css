@@ -103,18 +103,16 @@ a:focus-visible {
     border-bottom: 2px solid rgba(41, 38, 31, 0.65);
 }
 
-.wordmark {
-    display: grid;
-    width: 2.7rem;
-    height: 2.7rem;
-    place-items: center;
+.avatar {
+    display: block;
+    width: 5rem;
+    height: 5rem;
     border: 2px solid currentColor;
-    border-radius: 50%;
-    color: var(--ink);
-    font-family: ui-monospace, "SFMono-Regular", Consolas, monospace;
-    font-size: 0.86rem;
-    font-weight: 700;
-    text-decoration: none;
+    border-radius: 5%;
+    background: var(--paper-deep);
+    box-shadow: 2px 3px 0 rgba(64, 48, 27, 0.16);
+    object-fit: cover;
+    object-position: center 28%;
     transform: rotate(-4deg);
 }
 
